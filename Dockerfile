@@ -25,7 +25,7 @@ RUN curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.ch
 &&  cd bundle/programs/server \
 &&  npm install
 
-USER rocketchat
+USER root
 
 WORKDIR /app/bundle
 
